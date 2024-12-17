@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia - Cultura Peruana</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset de márgenes y padding para todos los elementos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos globales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Deshabilitar desplazamiento fuera de la pantalla */
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            background-color: #2d3e50;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            background-color: #1abc9c;
+        }
+
+        /* Sección multimedia */
+        .multimedia {
+            padding: 40px 10%;
+            text-align: center;
+            height: calc(100vh - 120px); /* Restamos el tamaño de la barra de navegación */
+            overflow-y: auto;
+            background-color: #ecf0f1;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .multimedia h2 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .multimedia h3 {
+            font-size: 28px;
+            color: #34495e;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+        /* Contenedor de videos */
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .video-item {
+            width: 48%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        /* Reproductor de audio */
+        .audio-player {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            max-width: 90%;
+            margin-bottom: 30px;
+        }
+
+        /* Pie de página */
+        .footer {
+            background-color: #2d3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .video-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .navbar ul {
+                flex-direction: column;
+            }
+            .navbar li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="navegacion.html">Navegación</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Sección Multimedia -->
+    <section class="multimedia">
+        <h2>Explora la Cultura Peruana</h2>
+        
+        <div class="video-container">
+            <!-- Video de Perú -->
+            <div class="video-item">
+                <video controls>
+                    <source src="videos/Peru.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+
+            <!-- Video de Cusco -->
+            <div class="video-item">
+                <video controls>
+                    <source src="videos/Cuzco.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+
+        <h3>Disfruta del Audio Representativo de Perú</h3>
+        <!-- Reproductor de audio -->
+        <div class="audio-player">
+            <audio controls>
+                <source src="audio/Arturo.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+        
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2024 Cultura Peruana. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+

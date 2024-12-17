@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegación - Cultura Peruana</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos -->
+    <style>
+        /* Reset para márgenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            background-color: #34495e;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            position: relative;
+            margin: 0 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #1abc9c;
+        }
+
+        /* Submenú "Maravillas" */
+        .navbar li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #2d3e50;
+            list-style: none;
+            padding: 10px 0;
+            border-radius: 5px;
+            min-width: 180px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar li:hover > ul {
+            display: block;
+        }
+
+        .navbar li ul li {
+            margin: 0;
+        }
+
+        .navbar li ul li a {
+            padding: 12px 20px;
+            color: white;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar li ul li a:hover {
+            background-color: #16a085;
+        }
+
+        /* Estilo para la sección de navegación */
+        .navegacion {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .navegacion h2 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .navegacion p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .navegacion-item {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #ecf0f1;
+            transition: background-color 0.3s ease;
+        }
+
+        .navegacion-item:hover {
+            background-color: #dfe6e9;
+        }
+
+        .navegacion-item h3 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .navegacion-item p {
+            font-size: 18px;
+            color: #7f8c8d;
+        }
+
+        /* Estilo para el pie de página */
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Estilos para la imagen */
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .cusco-image {
+            width: 80%;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animación suave para el menú */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .navegacion, .navbar, .footer {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="navegacion.html">Navegación</a>
+                <!-- Submenú "Maravillas" -->
+                <ul>
+                    
+                    <li><a href="historia.html">Historia</a></li>
+                </ul>
+            </li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="carrusel.html">Maravillas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Navegación -->
+    <section class="navegacion">
+        <h2>Navegación Cultural Peruana</h2>
+        <p>Descubre los aspectos más representativos de la cultura peruana. Conoce su historia milenaria, su gastronomía mundialmente reconocida, y el arte y la música que han perdurado a lo largo de los siglos.</p>
+        
+        <!-- Historia -->
+        <div class="navegacion-item">
+            <h3>Historia de Perú</h3>
+            <p>La historia de Perú es fascinante y está llena de civilizaciones antiguas, como los Incas, los Nazcas, los Mochicas, y los Paracas. La cultura Inca, con su impresionante capital en Cusco, es conocida por su avanzada ingeniería, arquitectura y organización social.</p>
+            <p>En esta sección, podrás conocer más sobre la influencia de estas antiguas culturas y cómo la historia del Perú ha influido en el país tal como lo conocemos hoy.</p>
+        </div>
+
+        <!-- Gastronomía -->
+        <div class="navegacion-item">
+            <h3>Gastronomía Peruana</h3>
+            <p>La gastronomía peruana es considerada una de las más diversas y ricas del mundo. Su fusión de ingredientes autóctonos y recetas de diferentes culturas ha dado lugar a una cocina llena de sabor y color.</p>
+            <p>En esta sección aprenderás sobre platos emblemáticos como el ceviche, la papa a la huancaína, el lomo saltado y la causa rellena. Además, te hablaremos de la importancia de los ingredientes locales como la quinua, el maíz y la papa.</p>
+        </div>
+
+        <!-- Arte y Música -->
+        <div class="navegacion-item">
+            <h3>Arte y Música</h3>
+            <p>El arte peruano se caracteriza por su diversidad y riqueza. Desde las antiguas cerámicas Nazcas hasta los actuales murales de artistas contemporáneos, el arte peruano es una manifestación de la vida, la religión, y la naturaleza.</p>
+            <p>La música peruana también es muy variada, desde las melodías de la flauta y el charango en los Andes hasta los ritmos afroperuanos que reflejan la mezcla de las tradiciones africanas con las peruanas.</p>
+        </div>
+
+    </section>
+
+    <!-- Imagen de Cusco -->
+    <div class="image-container">
+        <img src="imagenes/Arequipa.jpg" alt="Arequipa" class="Arequipa-image">
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2024 Cultura Peruana. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
